@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            width: 100dvw;
+            height: 100dvh;
+            background-color: rgb(124, 173, 173);
+            overflow: scroll;
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly; 
+          
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(163, 131, 192);
+            margin: 10px;
+        }
+        .box3{
+            background-color: red;
+        }
+        @media(max-width: 500px){
+            .container{
+                flex-direction: column;
+            }
+            /* box3{
+            display: none;
+            }*/
+        }
+    </style>
+  </head>
+<body>
+    
+
+    <div class="container">
+        <div class="box"></div>
+        <div class ="box"></div>
+        <div class="box box3"></div>
+    </div>
+    
+  </body>
+</html>
